@@ -4,7 +4,11 @@ format: gfm
 
 # Product management for data scientists
 
-This is a `reveal.js` presentation, rendered using `quarto` and `motion-canvas`, used for my lightning talk at Posit Workweek, 2024.
+This is a `reveal.js` presentation, rendered using `quarto` and `motion-canvas`, used for my talks at LondonR and SatRdays, in London, during April 2024.
+
+## Preview
+
+You can preview the slides at https://andrie.quarto.pub/pmds-londonr/
 
 
 ## Outline

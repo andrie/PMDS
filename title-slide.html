@@ -13,7 +13,18 @@ $if(date)$
   <p class="date">$date$</p>
 $endif$
 
+$if(qrcode)$
+<div id="qrcode-title-slide"></div>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    new QRCode(document.getElementById("qrcode-title-slide"), "$qrcode$");
+  });
+</script>
+$endif$
+
+$if(animation)$
 <p>
-    <motion-canvas-player src="./animations/posit_footer.js" auto="true" loop="true" style="position:absolute; top:0; width:100%;"></motion-canvas-player>
+  <motion-canvas-player src=$animation$ auto="true" loop="true" style="position:absolute; top:0; width:100%;"></motion-canvas-player>
 </p>
+$endif$
 </section>

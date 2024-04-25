@@ -2,6 +2,8 @@
 title: "Lessons learnt from Product Management, applied to Data Science"
 subtitle: "LondonR"
 author: "Andrie de Vries, Director of Product Strategy, Posit PBC"
+qrcode: "https://andrie.quarto.pub/pmds-londonr/"
+animation: "./animations/posit_footer.js" 
 format: 
   revealjs:
     width: 1920
@@ -13,6 +15,7 @@ format:
     resources:
     - dist/*/*
     - _fonts/*/*
+    - src/qrcode.js
     template-partials:
     - title-slide.html
     theme: 
@@ -22,6 +25,7 @@ format:
     menu: false
     include-in-header: 
       - text: <script src="./dist/motion-canvas-ts.js"></script>
+      - text: <script src="qrcode.js"></script>
     gongtimer:
       allottedTime: 20
       barColor: "#00f"
@@ -36,6 +40,8 @@ revealjs-plugins:
   - gongtimer
 ---
 
+<!-- {{< qrcode https://andrie.quarto.pub/pmds-londonr/ qrcode-title-slide width=200 height=200 >}} -->
+
 # Posit background
 
 {{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
@@ -47,6 +53,7 @@ What is product management?
 Why should you care as a data scientist?
 
 What next?
+
 
 # My product management journey
 
