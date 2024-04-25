@@ -135,12 +135,6 @@ I have used:
 
 
 
-## Crossing the chasm {visibility="hidden"}
-
-
-![](images/life-cycle-curve-chasm.drawio.png)
-
-
 <!-- ------------------------------------------------------------------ -->
 
 # But how do you do that?
@@ -188,11 +182,6 @@ The goal of product strategy is to define a sequence of outcomes (the plan) base
 ## Product strategy
 
 ![](images/product-strategy.drawio.png)
-
-## Product strategy image
-
-![](images/product-strategy.png)
-
 
 ## The ideal team
 
@@ -319,13 +308,23 @@ Make sure they can get help and updates
 
 {{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
-## Books
+## Book recommendations
 
-![](images/visual-guide.png)
-
-::: {.r-stack}
-<https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management>
+::: row3
+![Marty cagan](images/book-cagan-inspired.png)
+![Teresa Torres](images/book-torres-continuous-discovery.png)
+![](images/book-strategyzer-value-proposition-design.png)
 :::
+
+::: row3
+![April Dunford](images/book-dunford-sales-pitch.png)
+![](images/book-lemay-pm-in-practise.png)
+
+- Marty cagan, Inspired
+- Teresa Torres, Continuous discovery habits
+- April Dunford, Sales pitch
+:::
+
 
 
 ## Lenny's Podcast

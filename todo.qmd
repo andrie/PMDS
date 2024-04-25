@@ -1,0 +1,44 @@
+---
+format: gfm
+---
+
+
+## to do
+
+
+- Who is the user of PowerBi migration?
+- How do you get your collaborators to use version control?
+- PM vs SWE concerns
+- Add triad of designer, PM and dev lead
+- Maybe more examples of things that turned into products (at end)
+
+- recreate product strategy image
+
+Consider cutting out:
+
+- the adoption curve
+- crossing the chasm
+- remove prioritisation from product strategy slide
+
+## slides no longer used
+
+
+## Product strategy image {visibility="hidden"}
+
+![](images/product-strategy.png)
+
+
+## Books {visibility="hidden"}
+
+![](images/visual-guide.png)
+
+::: {.r-stack}
+<https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management>
+:::
+
+
+## Crossing the chasm {visibility="hidden"}
+
+
+![](images/life-cycle-curve-chasm.drawio.png)
+
