@@ -1,0 +1,9 @@
+/* Reveal extent of slides by making the viewport a different colour */
+
+.reveal .slides {
+  background-color: black;
+}
+
+body.reveal-viewport {
+  background: wheat;
+}

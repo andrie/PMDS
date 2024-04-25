@@ -1,0 +1,236 @@
+---
+title: "Lessons learnt from Product Management, applied to Data Science"
+subtitle: "LondonR"
+author: "Andrie de Vries, Director of Product Strategy, Posit PBC"
+format: 
+  revealjs:
+    width: 1920
+    height: 1080
+    mainfont: Open_Sans
+    transition: fade
+    transition-speed: slow
+    background-transition: fade
+    resources:
+    - dist/*/*
+    - _fonts/*/*
+    template-partials:
+    - title-slide.html
+    theme: 
+    - night
+    - custom.scss
+    # - extent.scss
+    menu: false
+    include-in-header: 
+      - text: <script src="./dist/motion-canvas-ts.js"></script>
+    gongtimer:
+      allottedTime: 20
+      barColor: "#00f"
+    filters:
+    - motion-canvas
+
+project:
+  preview:
+    port: 4200
+    browser: false
+revealjs-plugins:
+  - gongtimer
+---
+
+# Posit background
+
+{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
+
+# Agenda
+
+What is product management?
+
+Why should you care as a data scientist?
+
+What next?
+
+# My product management journey
+
+## My journey
+
+Psion
+
+Revolution R Open
+
+Microsoft R Open
+
+MRAN
+
+Posit Workbench
+
+## Marketing analytics
+
+Data scientists have many tools that are useful for product management. I have used:
+
+- `{forecast}`
+
+- `{conjoint}` for discrete choice analysis
+
+- `kmeans` clustering (base R)
+
+- `{lca}` (latent class analysis)
+
+- `{LDA}` for topic modeling 
+
+- `{survival}` for modeling ad effectiveness
+
+- `{keras}` and `{tensorflow}` for predicting support ticket complexity
+
+# What is product management?
+
+## Product life cycle
+
+![](./images/product-life-cycle.drawio.png){width="80%"}
+
+
+## The adoption cycle
+
+<br>
+
+![](images/life-cycle-curve.drawio.png)
+
+
+## Crossing the chasm
+
+![](images/life-cycle-curve-chasm.drawio.png)
+
+
+
+## Product strategy
+
+The goal of product strategy is to define a sequence of outcomes (the plan) based on analysis of:
+
+- the target customer, 
+- the market environment and 
+- the strategic objectives and needs of \<your company\>
+
+
+## Product strategy
+
+![](images/product-strategy.png)
+
+
+
+## Value proposition
+
+![](images/jtbd-value-proposition.drawio.png)
+
+
+<!-- --------------------------------------------------------------------- -->
+
+# The data scientist as PM
+
+## Think of your app is a product
+
+- Your app is a product
+
+- Your internal audience is your customer
+
+- You must convince users to change their habit to use your product
+
+- This switching cost is the “price”
+
+> *The biggest obstacle to adoption is inertia*
+>
+> - Paraphrased from April Dunford
+
+
+## How to convince them?
+
+- Case study: going from PowerBI to shiny dashboard
+
+- Talk to users before you build it?
+
+- Don't build it for you!!!
+
+- What does 10x mean for you?
+
+  - Super easy?
+
+  - More up to date?
+
+  - Faster?
+
+  - More easily sharable?
+
+  - ...
+
+- Symbian dashboard
+
+- Make sure they can discover your updates
+
+
+Addtional things as you grow
+
+- Understand the customer
+
+- Jobs to be done
+
+- Qual research
+
+- Quant research
+
+- Forums (gmail groups, slack, discord, reddit, youtube, ....)
+
+
+
+
+## Examples of project that turned into products
+
+- data.table
+
+- ropensci
+
+- tidyverse
+
+- H2O.ai
+
+
+
+# Resources
+
+## Books
+
+![](images/visual-guide.png)
+
+Best Product Management Books: A visual guide.
+
+https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management
+
+## Podcasts
+
+Lenny's Podcast (lennyspodcast.com)
+
+## Gitlab product handbook
+
+https://handbook.gitlab.com/handbook/product/
+
+
+
+# drawio.png
+
+::: row1
+![](./images/ptm-concept-map.drawio.png){width="80%"}
+:::
+
+-   Powerful, flexible, familiar tools
+-   Focus on producing, not managing production
+-   Reduce handoffs and dependencies
+-   Meet security and regulatory requirements
+-   Enable data teams of all sizes to make a big impact
+
+# Posit footer
+
+{{< motion-canvas ./animations/posit_footer.js fullscreen=true >}}
+
+# Hexagons
+
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
+
+# Q&A
+
+{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}

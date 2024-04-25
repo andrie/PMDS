@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Open_Sans";
+  /* src: url("_fonts/Open_Sans/static/OpenSans-Regular.ttf"); */
+  src: 
+    local(),  
+    url("./_fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format(truetype);
+  }
+
+.row {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  grid-gap: 30px;
+}
+
+.row > p, .row > ul, .row > .col {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+	display: grid;
+	width: 100%;
+	grid-gap: 1em;
+  text-align: center;
+  font-size: 0.75em;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.row1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  grid-gap: 30px;
+}
+
+.row1 > p, .row1 > ul, .row1 > .col {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+	display: grid;
+	width: 100%;
+	grid-gap: 1em;
+  text-align: center;
+  font-size: 0.75em;
+  grid-template-columns: 1fr;
+}
+
+.row .row3 {
+}
+
+.row{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.row > .col {
+  display: flex;
+}
+
+.reveal img {
+  margin: 0.5em;
+  border-radius: 5%;
+}
+
+
+.reveal img.demoimg {
+  /* margin: 1em; */
+  border-radius: 5%;
+}
+
+/* .hide > h1, .hide > h2 {
+  display: none;
+} */

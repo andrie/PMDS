@@ -1,0 +1,9 @@
+public/animations/
+node_modules/
+/.quarto/
+_site
+*_files/
+/.luarc.json
+
+_fonts
+_raw_images/
