@@ -8,11 +8,11 @@
 <link href="pmds_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="pmds_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="pmds_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="pmds_files/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script>
 <script src="pmds_files/libs/quarto-contrib/motion-canvas-0.2.0/motion-canvas-player.js"></script>
 <style>
     motion-canvas-player { width:  75%; }
-</style><meta charset="utf-8">
+</style>
+<script src="pmds_files/libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.551">
 
   <meta name="author" content="Andrie de Vries, Director of Product Strategy, Posit">
@@ -325,8 +325,8 @@
       margin-right: 0; 
     }
   </style>
-  <script src="./dist/motion-canvas-ts.js"></script>
-  <script src="qrcode.js"></script>
+  <script src="dist/motion-canvas-ts.js"></script>
+  <script src="src/qrcode.js"></script>
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -348,12 +348,6 @@
   <motion-canvas-player src="./animations/posit_footer.js" auto="true" loop="true" style="position:absolute; top:0; width:100%;"></motion-canvas-player>
 </p>
 </section>
-<section id="posit-background" class="title-slide slide level1 center">
-<h1>Posit background</h1>
-<!--  -->
-<p><motion-canvas-player src="./animations/posit-logo.js" loop="false" style="position:absolute; top:0; width:100%; z-index: -1; "></motion-canvas-player></p>
-</section>
-
 <section id="agenda" class="title-slide slide level1 center">
 <h1>Agenda</h1>
 <p><motion-canvas-player src="./animations/hexagons.js" loop="false" style="position:absolute; top:0; width:100%; "></motion-canvas-player></p>
@@ -362,6 +356,7 @@
 <li><p>Why should you care as a data scientist?</p></li>
 <li><p>What next?</p></li>
 </ul>
+<!-- ------------------------------------------------------------------ -->
 </section>
 
 <section>
@@ -378,12 +373,23 @@
 <li><p>Revolution R Open</p></li>
 <li><p>Microsoft R Open</p></li>
 <li><p>MRAN</p></li>
-<li><p>Posit Workbench</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/psion-revo.png"></p>
+<p><img data-src="images/logo-revolution.png" height="200"></p>
+<p><img data-src="images/logo-microsoft.png"></p>
 </div>
 </div>
+</section>
+<section id="more-recently-at-posit" class="slide level2">
+<h2>More recently, at Posit</h2>
+<p><motion-canvas-player src="./animations/posit-logo.js" loop="false" style="position:absolute; top:0; width:100%; z-index: -1; "></motion-canvas-player></p>
+<ul>
+<li><p>Posit Workbench</p></li>
+<li><p>Posit Technical Acccount Management</p></li>
+<li><p>Licensing</p></li>
+<li><p>Packaging and pricing</p></li>
+</ul>
 </section>
 <section id="marketing-analytics" class="slide level2">
 <h2>Marketing analytics</h2>
@@ -398,6 +404,7 @@
 <li><p><code>{survival}</code> for modeling ad effectiveness</p></li>
 <li><p><code>{keras}</code> and <code>{tensorflow}</code> for predicting support ticket complexity</p></li>
 </ul>
+<!-- ------------------------------------------------------------------ -->
 </section></section>
 <section>
 <section id="what-is-product-management" class="title-slide slide level1 center">
@@ -413,10 +420,7 @@
 <p><br></p>
 
 <img data-src="images/life-cycle-curve.drawio.png" class="r-stretch"></section>
-<section id="crossing-the-chasm" class="slide level2">
-<h2>Crossing the chasm</h2>
-
-<img data-src="images/life-cycle-curve-chasm.drawio.png" class="r-stretch"></section></section>
+</section>
 <section>
 <section id="but-how-do-you-do-that" class="title-slide slide level1 center">
 <h1>But how do you do that?</h1>
@@ -460,8 +464,16 @@
 <section id="product-strategy-1" class="slide level2">
 <h2>Product strategy</h2>
 
+<img data-src="images/product-strategy.drawio.png" class="r-stretch"></section>
+<section id="product-strategy-image" class="slide level2">
+<h2>Product strategy image</h2>
+
+<img data-src="images/product-strategy.png" class="r-stretch"></section>
+<section id="the-ideal-team" class="slide level2">
+<h2>The ideal team</h2>
+
 <!-- --------------------------------------------------------------------- -->
-<img data-src="images/product-strategy.png" class="r-stretch"></section></section>
+<img data-src="images/pm-triad.drawio.png" class="r-stretch"></section></section>
 <section>
 <section id="the-data-scientist-as-product-manager" class="title-slide slide level1 center">
 <h1>The data scientist as Product Manager</h1>
@@ -498,35 +510,34 @@
 </section>
 <section id="how-to-convince-your-users" class="slide level2">
 <h2>How to convince your users?</h2>
+<p>For example:</p>
 <ul>
-<li><p>Example:</p>
-<ul>
-<li>going from PowerBI to shiny dashboard</li>
-</ul></li>
+<li>Going from PowerBI / excel to a <code>shiny</code> dashboard</li>
 </ul>
 <p><br></p>
+<div>
 <ul>
-<li><p>Talk to users before you build it?</p></li>
-<li><p>Don’t build it for you!!!</p></li>
+<li class="fragment"><p>Talk to users before you build it</p></li>
+<li class="fragment"><p>Don’t build it for you!!!</p></li>
 </ul>
+</div>
 </section>
-<section id="the-10-x-exercise" class="slide level2">
-<h2>The 10-x exercise</h2>
+<section id="the-10-x-better-exercise" class="slide level2">
+<h2>The 10-x better exercise</h2>
+<p>What does 10x better mean for your product?</p>
 <ul>
-<li><p>What does 10x mean for your product?</p>
-<ul>
-<li><p>Super easy?</p></li>
-<li><p>More up to date?</p></li>
+<li><p>Easier?</p></li>
+<li><p>More reliable / up-to-date?</p></li>
 <li><p>Faster?</p></li>
-<li><p>More easily sharable?</p></li>
+<li><p>Sharable?</p></li>
+<li><p>Commenting?</p></li>
 <li><p>…</p></li>
-</ul></li>
 </ul>
 </section>
-<section id="addtional-things-as-you-grow-your-product" class="slide level2">
-<h2>Addtional things as you grow your product</h2>
+<section id="additional-things-as-you-grow-your-product" class="slide level2">
+<h2>Additional things as you grow your product</h2>
+<p>Understand the customer</p>
 <ul>
-<li><p>Understand the customer</p></li>
 <li><p>Qualitative research</p>
 <ul>
 <li>Interviews, focus groups, observation</li>
@@ -536,7 +547,10 @@
 <li><p>Survey</p></li>
 <li><p>Questionnaire</p></li>
 </ul></li>
-<li><p>Forums (gmail groups, slack, discord, reddit, youtube, ….)</p></li>
+</ul>
+<p>Make sure they can get help and updates</p>
+<ul>
+<li>Forums, mailing lists, slack, discord, reddit, youtube, ….</li>
 </ul>
 </section>
 <section id="examples-of-projects-that-turned-into-products" class="slide level2">
@@ -545,6 +559,7 @@
 <div class="row3">
 <p><img data-src="images/logo-data-table.png" height="300"> <img data-src="images/logo-ropensci.png" height="250"> <img data-src="images/logo-h2o.png" height="300"></p>
 </div>
+<!-- ------------------------------------------------------------------ -->
 </section></section>
 <section>
 <section id="resources" class="title-slide slide level1 center">
@@ -554,20 +569,36 @@
 <section id="books" class="slide level2">
 <h2>Books</h2>
 
-<img data-src="images/visual-guide.png" class="r-stretch"><p>Best Product Management Books: A visual guide.</p>
-<p>https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management</p>
+<img data-src="images/visual-guide.png" class="r-stretch"><div class="r-stack">
+<p><a href="https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management" class="uri">https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management</a></p>
+</div>
 </section>
-<section id="podcasts" class="slide level2">
-<h2>Podcasts</h2>
-<p>Lenny’s Podcast (lennyspodcast.com)</p>
+<section id="lennys-podcast" class="slide level2">
+<h2>Lenny’s Podcast</h2>
+
+<img data-src="images/resource-lennys-podcast.png" class="r-stretch"><div class="r-stack">
+<p><a href="https://www.lennyspodcast.com/" class="uri">https://www.lennyspodcast.com/</a></p>
+</div>
 </section>
 <section id="gitlab-product-handbook" class="slide level2">
 <h2>Gitlab product handbook</h2>
-<p>https://handbook.gitlab.com/handbook/product/</p>
+
+<img data-src="images/resource-gitlab-handbook.png" class="r-stretch"><div class="r-stack">
+<p><a href="https://handbook.gitlab.com/handbook/product/" class="uri">https://handbook.gitlab.com/handbook/product/</a></p>
+</div>
 </section></section>
 <section id="qa" class="title-slide slide level1 center">
 <h1>Q&amp;A</h1>
 <p><motion-canvas-player src="./animations/posit_footer.js" loop="true" style="position:absolute; top:0; width:100%; "></motion-canvas-player></p>
+<p><br></p>
+<div id="qrcode" class="qrcode"></div>
+<script type="text/javascript">
+var qrcode = new QRCode("qrcode", {"width":"300","height":"300","colorLight":"#ffffff","text":"https://andrie.quarto.pub/pmds-londonr/","colorDark":"#000000"});
+</script>
+    
+<div class="r-stack">
+<p><a href="https://andrie.quarto.pub/pmds-londonr/" class="uri">https://andrie.quarto.pub/pmds-londonr/</a></p>
+</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 

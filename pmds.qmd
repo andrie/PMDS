@@ -24,8 +24,8 @@ format:
     # - extent.scss
     menu: false
     include-in-header: 
-      - text: <script src="./dist/motion-canvas-ts.js"></script>
-      - text: <script src="qrcode.js"></script>
+      - text: <script src="dist/motion-canvas-ts.js"></script>
+      - text: <script src="src/qrcode.js"></script>
     gongtimer:
       allottedTime: 20
       barColor: "#00f"
@@ -40,11 +40,6 @@ revealjs-plugins:
   - gongtimer
 ---
 
-# Posit background
-
-<!-- {{< qrcode https://andrie.quarto.pub/pmds-londonr/ qrcode-pb width=200 height=200 >}} -->
-
-{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
 
 # Agenda
 
@@ -55,6 +50,10 @@ revealjs-plugins:
 - Why should you care as a data scientist?
 
 - What next?
+
+
+
+<!-- ------------------------------------------------------------------ -->
 
 # My product management journey
 
@@ -72,14 +71,29 @@ revealjs-plugins:
 
 - MRAN
 
-- Posit Workbench
-
 :::
 ::: {.column width="50%"}
 ![](images/psion-revo.png)
 
+![](images/logo-revolution.png){height=200}
+
+![](images/logo-microsoft.png)
+
 :::
 ::::
+
+## More recently, at Posit
+
+{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
+
+- Posit Workbench
+
+- Posit Technical Acccount Management
+
+- Licensing
+
+- Packaging and pricing
+
 
 ## Marketing analytics
 
@@ -101,6 +115,10 @@ I have used:
 
 -   `{keras}` and `{tensorflow}` for predicting support ticket complexity
 
+
+
+<!-- ------------------------------------------------------------------ -->
+
 # What is product management?
 
 {{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
@@ -115,10 +133,15 @@ I have used:
 
 ![](images/life-cycle-curve.drawio.png)
 
-## Crossing the chasm
+
+
+## Crossing the chasm {visibility="hidden"}
+
 
 ![](images/life-cycle-curve-chasm.drawio.png)
 
+
+<!-- ------------------------------------------------------------------ -->
 
 # But how do you do that?
 
@@ -161,13 +184,22 @@ The goal of product strategy is to define a sequence of outcomes (the plan) base
 -   the market environment and
 -   the strategic objectives and needs of \<your company\>
 
+
 ## Product strategy
+
+![](images/product-strategy.drawio.png)
+
+## Product strategy image
 
 ![](images/product-strategy.png)
 
+
+## The ideal team
+
+![](images/pm-triad.drawio.png)
+
+
 <!-- --------------------------------------------------------------------- -->
-
-
 
 
 # The data scientist as Product Manager
@@ -220,34 +252,41 @@ Paraphrased from April Dunford
 
 ## How to convince your users?
 
--   Example:
+For example:
 
-    -  going from PowerBI to shiny dashboard
+-  Going from PowerBI / excel to a `shiny` dashboard
 
 </br>
 
--   Talk to users before you build it?
+
+::: {.incremental}
+
+-   Talk to users before you build it
 
 -   Don't build it for you!!!
 
-## The 10-x exercise
+:::
 
--   What does 10x mean for your product?
+## The 10-x better exercise
 
-    -   Super easy?
+What does 10x better mean for your product?
 
-    -   More up to date?
+-   Easier?
 
-    -   Faster?
+-   More reliable / up-to-date?
 
-    -   More easily sharable?
+-   Faster?
 
-    -   ...
+-   Sharable?
+
+-   Commenting?
+
+-   ...
 
 
-## Addtional things as you grow your product
+## Additional things as you grow your product
 
--   Understand the customer
+Understand the customer
 
 -   Qualitative research
 
@@ -259,7 +298,9 @@ Paraphrased from April Dunford
 
     - Questionnaire
 
--   Forums (gmail groups, slack, discord, reddit, youtube, ....)
+Make sure they can get help and updates
+
+- Forums, mailing lists, slack, discord, reddit, youtube, ....
 
 ## Examples of projects that turned into products
 
@@ -272,6 +313,7 @@ Paraphrased from April Dunford
 :::
 
 
+<!-- ------------------------------------------------------------------ -->
 
 # Resources
 
@@ -281,20 +323,37 @@ Paraphrased from April Dunford
 
 ![](images/visual-guide.png)
 
-Best Product Management Books: A visual guide.
+::: {.r-stack}
+<https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management>
+:::
 
-https://www.delibr.com/post/visual-guide-to-the-best-books-on-product-management
 
-## Podcasts
+## Lenny's Podcast
 
-Lenny's Podcast (lennyspodcast.com)
+![](images/resource-lennys-podcast.png)
+
+::: {.r-stack}
+<https://www.lennyspodcast.com/>
+:::
+
 
 ## Gitlab product handbook
 
-https://handbook.gitlab.com/handbook/product/
+![](images/resource-gitlab-handbook.png)
 
+::: {.r-stack}
+<https://handbook.gitlab.com/handbook/product/>
+:::
 
 
 # Q&A
 
 {{< motion-canvas ./animations/posit_footer.js fullscreen=true >}}
+
+</br>
+
+
+{{< qrcode https://andrie.quarto.pub/pmds-londonr/ height=300 width=300 >}}
+::: {.r-stack}
+<https://andrie.quarto.pub/pmds-londonr/>
+:::
