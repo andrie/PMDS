@@ -5,7 +5,7 @@ import {createRef, makeRef, range, useRandom} from '@motion-canvas/core/lib/util
 import {all, chain, sequence} from '@motion-canvas/core/lib/flow';
 import { Colors, Posit } from '../styles';
 
-function gridPoly(ref:any, x:number, y:number, size:number) {
+function gridPoly(ref:any, x:number, y:number, size:number, opacity:number) {
   return(
     <Polygon 
       ref={ref}
@@ -14,8 +14,10 @@ function gridPoly(ref:any, x:number, y:number, size:number) {
       size={size}
       fill={Posit.gray}
       lineWidth={3}
-      stroke={Colors.white}
+      // stroke={Colors.whiteAlpha50}
+      stroke={Colors.almostBlack}
       scale={0}
+      opacity={opacity}
     />
   )
 }
@@ -39,9 +41,10 @@ export default makeScene2D(function* (view) {
         gridPoly(makeRef(polys, i * ncols + j), 
         (j - (ncols / 2)) * size * cos(30) + (i % 2) * size * cos(30) / 2, 
         -size * i * 1.5 * sin(30) + (nrows + 2) * size * sin(30) / 2, 
-        size)
-      )
-    )}
+        size,
+        (1 - i / nrows) * 0.5
+    )))
+    }
   </>
   );
 
@@ -50,18 +53,13 @@ export default makeScene2D(function* (view) {
     chain(
       waitFor(1),
       sequence( 0.01, ...polys.map((poly, index) => {
-        const opacity = 1 - index / polys.length;
+        const opacity = (1 - index / polys.length) * 0.8;
         return all(
           poly.fill(Posit.teal, 2),
           poly.opacity(opacity, 2)
         );
       })),
       ),
-    // chain(
-    //   waitFor(2),
-    //   polys[highlight].fill(highlightColor, 1),
-    //   waitFor(1)
-    // )
 
   );
     

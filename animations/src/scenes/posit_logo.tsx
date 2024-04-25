@@ -49,9 +49,9 @@ export default makeScene2D(function* (view) {
         <Path ref={chevron.left} position={[-50,   0]} scale={1}   stroke={Posit.gray} rotation={180} lineWidth={8} data={rect_path} />,
         <Path ref={chevron.right} position={[150,  0]} scale={1} stroke={Posit.gray} lineWidth={8} data={rect_path} />,
       </Node>
-      <Node >
+      {/* <Node >
         <Txt ref={txtPosit} text='' fill='#666' fontFamily='Open Sans' fontSize={150} />
-      </Node>
+      </Node> */}
     </>
   );
 
@@ -73,7 +73,7 @@ export default makeScene2D(function* (view) {
       // logo changes position
       pLogo().position(view.position().sub([100, 100]), 1),
       pLogo().scale(0.5, 1),
-      txtPosit().text('Posit', 2, linear),
+      // txtPosit().text('Posit', 2, linear),
     ),
     waitFor(1),
   )

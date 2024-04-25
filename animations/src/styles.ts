@@ -17,7 +17,9 @@ export const Colors = {
   green: '#8bc34a',
   blue: '#2196f3',
   white: '#ffffff',
+  whiteAlpha50:  'rgba(255, 255, 255, 0.5)',
   black: '#000000',
+  almostBlack: '#11111177'
 };
 
 

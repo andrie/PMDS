@@ -1,0 +1,22 @@
+{
+  "name": "animations",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "^3.13.0",
+    "@motion-canvas/core": "^3.13.0",
+    "@motion-canvas/ffmpeg": "^1.1.0",
+    "@motion-canvas/player": "^3.12.1",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.13.0",
+    "@motion-canvas/vite-plugin": "^3.13.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}

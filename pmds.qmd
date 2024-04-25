@@ -1,7 +1,7 @@
 ---
 title: "Lessons learnt from Product Management, applied to Data Science"
-subtitle: "LondonR"
-author: "Andrie de Vries, Director of Product Strategy, Posit PBC"
+subtitle: "LondonR, April 2024"
+author: "Andrie de Vries, Director of Product Strategy, Posit"
 qrcode: "https://andrie.quarto.pub/pmds-londonr/"
 animation: "./animations/posit_footer.js" 
 format: 
@@ -40,59 +40,74 @@ revealjs-plugins:
   - gongtimer
 ---
 
-<!-- {{< qrcode https://andrie.quarto.pub/pmds-londonr/ qrcode-title-slide width=200 height=200 >}} -->
-
 # Posit background
+
+<!-- {{< qrcode https://andrie.quarto.pub/pmds-londonr/ qrcode-pb width=200 height=200 >}} -->
 
 {{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
 
 # Agenda
 
-What is product management?
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
-Why should you care as a data scientist?
+- What is product management?
 
-What next?
+- Why should you care as a data scientist?
 
+- What next?
 
 # My product management journey
 
-## My journey
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
-Psion
+## Products that I worked on
 
-Revolution R Open
+:::: {.columns}
+::: {.column width="50%"}
+- Psion Revo PDA
 
-Microsoft R Open
+- Revolution R Open
 
-MRAN
+- Microsoft R Open
 
-Posit Workbench
+- MRAN
+
+- Posit Workbench
+
+:::
+::: {.column width="50%"}
+![](images/psion-revo.png)
+
+:::
+::::
 
 ## Marketing analytics
 
-Data scientists have many tools that are useful for product management. I have used:
+Data scientists have many tools that are useful for product management. 
 
-- `{forecast}`
+I have used:
 
-- `{conjoint}` for discrete choice analysis
+-   `{forecast}`
 
-- `kmeans` clustering (base R)
+-   `{mlogit}` for discrete choice analysis (conjoint and maxdiff)
 
-- `{lca}` (latent class analysis)
+-   `kmeans` clustering (base R)
 
-- `{LDA}` for topic modeling 
+-   `{LCA}` (latent class analysis)
 
-- `{survival}` for modeling ad effectiveness
+-   `{lda}` and `{topicmodels}` for topic modeling
 
-- `{keras}` and `{tensorflow}` for predicting support ticket complexity
+-   `{survival}` for modeling ad effectiveness
+
+-   `{keras}` and `{tensorflow}` for predicting support ticket complexity
 
 # What is product management?
+
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
 ## Product life cycle
 
 ![](./images/product-life-cycle.drawio.png){width="80%"}
-
 
 ## The adoption cycle
 
@@ -100,105 +115,167 @@ Data scientists have many tools that are useful for product management. I have u
 
 ![](images/life-cycle-curve.drawio.png)
 
-
 ## Crossing the chasm
 
 ![](images/life-cycle-curve-chasm.drawio.png)
 
 
+# But how do you do that?
+
+![](images/question-mark.drawio.png)
+
+## Define your value proposition
+
+Your product must create gain and reduce pain.
+
+![](images/jtbd-value-proposition.drawio.png)
+
+## Jobs to be done
+
+> Jobs Theory goes beyond superficial categories to expose the functional, social, and emotional dimensions that explain why customers make the choices they do.
+>
+> - <https://www.christenseninstitute.org/jobs-to-be-done/>
+
+
+</br>
+
+A framework by Clayton Christensen and Bob Moesta
+
+## Jobs to be done
+
+Use JTBD as the first step in the value proposition:
+
+-   What **activity** must be completed?
+
+-   What is the **current way** to do that?
+
+-   What are the **pain points** with the current way?
+
+-   What can be **gained** by doing it differently?
 
 ## Product strategy
 
 The goal of product strategy is to define a sequence of outcomes (the plan) based on analysis of:
 
-- the target customer, 
-- the market environment and 
-- the strategic objectives and needs of \<your company\>
-
+-   the target customer,
+-   the market environment and
+-   the strategic objectives and needs of \<your company\>
 
 ## Product strategy
 
 ![](images/product-strategy.png)
 
-
-
-## Value proposition
-
-![](images/jtbd-value-proposition.drawio.png)
-
-
 <!-- --------------------------------------------------------------------- -->
 
-# The data scientist as PM
 
-## Think of your app is a product
 
-- Your app is a product
 
-- Your internal audience is your customer
+# The data scientist as Product Manager
 
-- You must convince users to change their habit to use your product
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
-- This switching cost is the “price”
+
+
+## Think of your app as a product
+
+:::: {.columns}
+::: {.column width="60%"}
+
+-   Your app is a product
+
+-   Your internal audience is your customer
+
+-   You must convince users to change their habit to use your product
+
+-   This switching cost is the “price”
+
+
+:::
+::: {.column width="40%"}
+
+![](images/dunford-sales-pitch.png)
+
+:::
+::::
+
+## Inertia
+
+
+:::: {.columns}
+::: {.column width="60%"}
 
 > *The biggest obstacle to adoption is inertia*
->
-> - Paraphrased from April Dunford
+
+Paraphrased from April Dunford
+
+ <https://www.aprildunford.com/>
+
+:::
+::: {.column width="40%"}
+
+![](images/dunford-sales-pitch.png)
+
+:::
+::::
+
+## How to convince your users?
+
+-   Example:
+
+    -  going from PowerBI to shiny dashboard
+
+</br>
+
+-   Talk to users before you build it?
+
+-   Don't build it for you!!!
+
+## The 10-x exercise
+
+-   What does 10x mean for your product?
+
+    -   Super easy?
+
+    -   More up to date?
+
+    -   Faster?
+
+    -   More easily sharable?
+
+    -   ...
 
 
-## How to convince them?
+## Addtional things as you grow your product
 
-- Case study: going from PowerBI to shiny dashboard
+-   Understand the customer
 
-- Talk to users before you build it?
+-   Qualitative research
 
-- Don't build it for you!!!
+    -   Interviews, focus groups, observation
 
-- What does 10x mean for you?
+-   Quant research
 
-  - Super easy?
+    - Survey
 
-  - More up to date?
+    - Questionnaire
 
-  - Faster?
+-   Forums (gmail groups, slack, discord, reddit, youtube, ....)
 
-  - More easily sharable?
+## Examples of projects that turned into products
 
-  - ...
+</br>
 
-- Symbian dashboard
-
-- Make sure they can discover your updates
-
-
-Addtional things as you grow
-
-- Understand the customer
-
-- Jobs to be done
-
-- Qual research
-
-- Quant research
-
-- Forums (gmail groups, slack, discord, reddit, youtube, ....)
-
-
-
-
-## Examples of project that turned into products
-
-- data.table
-
-- ropensci
-
-- tidyverse
-
-- H2O.ai
+::: row3
+![](images/logo-data-table.png){height=300}
+![](images/logo-ropensci.png){height=250}
+![](images/logo-h2o.png){height=300}
+:::
 
 
 
 # Resources
+
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
 ## Books
 
@@ -218,26 +295,6 @@ https://handbook.gitlab.com/handbook/product/
 
 
 
-# drawio.png
-
-::: row1
-![](./images/ptm-concept-map.drawio.png){width="80%"}
-:::
-
--   Powerful, flexible, familiar tools
--   Focus on producing, not managing production
--   Reduce handoffs and dependencies
--   Meet security and regulatory requirements
--   Enable data teams of all sizes to make a big impact
-
-# Posit footer
-
-{{< motion-canvas ./animations/posit_footer.js fullscreen=true >}}
-
-# Hexagons
-
-{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
-
 # Q&A
 
-{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
+{{< motion-canvas ./animations/posit_footer.js fullscreen=true >}}
