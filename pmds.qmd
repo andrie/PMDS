@@ -49,7 +49,7 @@ revealjs-plugins:
 
 - Why should you care as a data scientist?
 
-- What next?
+- Resources
 
 
 
@@ -82,19 +82,6 @@ revealjs-plugins:
 :::
 ::::
 
-## More recently, at Posit
-
-{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
-
-- Posit Workbench
-
-- Posit Technical Acccount Management
-
-- Licensing
-
-- Packaging and pricing
-
-
 ## Marketing analytics
 
 Data scientists have many tools that are useful for product management. 
@@ -116,6 +103,19 @@ I have used:
 -   `{keras}` and `{tensorflow}` for predicting support ticket complexity
 
 
+## More recently, at Posit
+
+{{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
+
+- Posit Workbench
+
+- Posit Technical Acccount Management
+
+- Licensing
+
+- Packaging and pricing
+
+
 
 <!-- ------------------------------------------------------------------ -->
 
@@ -134,6 +134,12 @@ I have used:
 ![](images/life-cycle-curve.drawio.png)
 
 
+</br>
+
+Geoffrey Moore, Crossing the Chasm
+
+
+
 
 <!-- ------------------------------------------------------------------ -->
 
@@ -141,11 +147,18 @@ I have used:
 
 ![](images/question-mark.drawio.png)
 
+
+
 ## Define your value proposition
 
-Your product must create gain and reduce pain.
+Create gain and reduce pain.
 
 ![](images/jtbd-value-proposition.drawio.png)
+
+
+</br>
+
+Strategyzer, Value Proposition Design
 
 ## Jobs to be done
 
@@ -172,20 +185,25 @@ Use JTBD as the first step in the value proposition:
 
 ## Product strategy
 
-The goal of product strategy is to define a sequence of outcomes (the plan) based on analysis of:
+Define a sequence of outcomes (the plan) based on analysis of:
 
--   the target customer,
--   the market environment and
--   the strategic objectives and needs of \<your company\>
+- target customer,
+- market environment and
+- strategic objectives and needs of \<your company\>
 
+![](images/product-strategy-1.drawio.png)
 
-## Product strategy
+## Product strategy meets value proposition
 
 ![](images/product-strategy.drawio.png)
 
-## The ideal team
+## The product triad
 
 ![](images/pm-triad.drawio.png)
+
+</br>
+
+Marty Cagan, Inspired
 
 
 <!-- --------------------------------------------------------------------- -->
@@ -243,7 +261,7 @@ Paraphrased from April Dunford
 
 For example:
 
--  Going from PowerBI / excel to a `shiny` dashboard
+-  How do you persuade business users to stop using **Excel** / **PowerPoint** and adopt your  `shiny` / `quarto` dashboard?
 
 </br>
 
@@ -283,9 +301,11 @@ Understand the customer
 
 -   Quant research
 
-    - Survey
+    - Survey, questionnaire
 
-    - Questionnaire
+- Compare
+
+  - with substitutes / alternatives
 
 Make sure they can get help and updates
 
@@ -313,17 +333,17 @@ Make sure they can get help and updates
 ::: row3
 ![Marty cagan](images/book-cagan-inspired.png)
 ![Teresa Torres](images/book-torres-continuous-discovery.png)
-![](images/book-strategyzer-value-proposition-design.png)
+![Strategyzer](images/book-strategyzer-value-proposition-design.png)
 :::
 
 ::: row3
 ![April Dunford](images/book-dunford-sales-pitch.png)
 ![](images/book-lemay-pm-in-practise.png)
+:::
 
 - Marty cagan, Inspired
 - Teresa Torres, Continuous discovery habits
 - April Dunford, Sales pitch
-:::
 
 
 
@@ -343,6 +363,17 @@ Make sure they can get help and updates
 ::: {.r-stack}
 <https://handbook.gitlab.com/handbook/product/>
 :::
+
+
+# Summary
+
+{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
+
+- What is product management?
+
+- Why should you care as a data scientist?
+
+- Resources
 
 
 # Q&A
