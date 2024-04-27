@@ -28,7 +28,7 @@ format:
       - text: <script src="src/qrcode.js"></script>
     gongtimer:
       allottedTime: 25
-      barColor: "#17212B"
+      barColor: "#00f"
       progressBarHeight: 4
     filters:
     - motion-canvas
