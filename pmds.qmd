@@ -28,8 +28,8 @@ format:
       - text: <script src="src/qrcode.js"></script>
     gongtimer:
       allottedTime: 25
-      barColor: "#00f"
-      progressBarHeight: 5
+      barColor: "#17212B"
+      progressBarHeight: 4
     filters:
     - motion-canvas
 
@@ -314,11 +314,8 @@ Make sure they can get help and updates
 ![Marty cagan](images/book-cagan-inspired.png)
 ![Teresa Torres](images/book-torres-continuous-discovery.png)
 ![Strategyzer](images/book-strategyzer-value-proposition-design.png)
-:::
-
-::: row3
 ![April Dunford](images/book-dunford-sales-pitch.png)
-![](images/book-lemay-pm-in-practise.png)
+![LeMay](images/book-lemay-pm-in-practise.png)
 :::
 
 - Marty cagan, Inspired
