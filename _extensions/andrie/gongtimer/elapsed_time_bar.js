@@ -41,13 +41,15 @@ var _gong = {
 
       // override height of page-progress container
       pageProgressContainer && (pageProgressContainer.style.height = barHeight);
+      barHeight = parseInt(config.progressBarHeight, 10) - 1 + 'px';
     } else if (config.progress && pageProgressContainer) {
       // get height from page-progress container
-      barHeight = pageProgressContainer.getBoundingClientRect().height + 'px';
+      barHeight = pageProgressContainer.getBoundingClientRect().height - 1 + 'px';
     } else {
       // default
       barHeight = '3px';
     }
+    // barHeight = parseInt(config.progressBarHeight, 10) - 1 + 'px';
 
     // create container of time-progress
     var timeProgressContainer = document.createElement('div');
@@ -88,7 +90,17 @@ var _gong = {
       this.timeProgressBar.style.width = '100%';
       this.isFinished = true;
     } else {
-      this.timeProgressBar.style.width = elapsedTime / this.allottedTime * 100 + '%';
+      newWidth = elapsedTime / this.allottedTime * 100 + '%';
+      this.timeProgressBar.style.width = newWidth;
+      // pageProgressWidth = document.querySelector('.progress > div').style.width;
+      // var pageProgressContainer = document.querySelector('.progress');
+      // if (pageProgressWidth > newWidth) {
+      //   pageProgressContainer.style.zIndex = 100;
+      //   this.timeProgressBar.style.zIndex = 90;
+      // } else {
+      //   pageProgressContainer.style.zIndex = 90;
+      //   this.timeProgressBar.style.zIndex = 100;
+      // }
       requestAnimationFrame(this.loop.bind(this));
     }
   },
