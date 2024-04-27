@@ -1,8 +1,8 @@
 ---
 title: "Lessons learnt from Product Management, applied to Data Science"
-subtitle: "LondonR, April 2024"
+subtitle: "SatRdays, April 2024"
 author: "Andrie de Vries, Director of Product Strategy, Posit"
-qrcode: "https://andrie.quarto.pub/pmds-londonr/"
+qrcode: "https://andrie.quarto.pub/pmds-saturdays/"
 animation: "./animations/posit_footer.js" 
 format: 
   revealjs:
@@ -27,8 +27,9 @@ format:
       - text: <script src="dist/motion-canvas-ts.js"></script>
       - text: <script src="src/qrcode.js"></script>
     gongtimer:
-      allottedTime: 20
+      allottedTime: 25
       barColor: "#00f"
+      progressBarHeight: 5
     filters:
     - motion-canvas
 
@@ -81,27 +82,6 @@ revealjs-plugins:
 
 :::
 ::::
-
-## Marketing analytics
-
-Data scientists have many tools that are useful for product management. 
-
-I have used:
-
--   `{forecast}`
-
--   `{mlogit}` for discrete choice analysis (conjoint and maxdiff)
-
--   `kmeans` clustering (base R)
-
--   `{LCA}` (latent class analysis)
-
--   `{lda}` and `{topicmodels}` for topic modeling
-
--   `{survival}` for modeling ad effectiveness
-
--   `{keras}` and `{tensorflow}` for predicting support ticket complexity
-
 
 ## More recently, at Posit
 
@@ -383,7 +363,7 @@ Make sure they can get help and updates
 </br>
 
 
-{{< qrcode https://andrie.quarto.pub/pmds-londonr/ height=300 width=300 >}}
+{{< qrcode https://andrie.quarto.pub/pmds-saturdays/ height=300 width=300 typeNumber=2 QRCode.correctLevel=H >}}
 ::: {.r-stack}
-<https://andrie.quarto.pub/pmds-londonr/>
+<https://andrie.quarto.pub/pmds-saturdays/>
 :::
