@@ -1,7 +1,7 @@
 # Makefile
 
 # Phony target to prevent file name conflict
-.PHONY: all anim quarto publish serve
+.PHONY: all anim quarto publish serve preview
 
 PRES = pmds.qmd
 
@@ -23,3 +23,6 @@ quarto:
 publish:
 	quarto render $(PRES)
 	quarto publish $(PRES) --no-prompt
+
+preview:
+	quarto preview $(PRES) --no-browser --port 4096
