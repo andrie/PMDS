@@ -1,8 +1,8 @@
 ---
 title: "Lessons learnt from Product Management, applied to Data Science"
-subtitle: "SatRdays, April 2024"
+subtitle: "EARL conference, Sept 2024"
 author: "Andrie de Vries, Director of Product Strategy, Posit"
-qrcode: "https://andrie.quarto.pub/pmds-saturdays/"
+qrcode: "https://andrie.quarto.pub/pmds-earl/"
 animation: "./animations/posit_footer.js" 
 format: 
   revealjs:
@@ -27,11 +27,14 @@ format:
       - text: <script src="dist/motion-canvas-ts.js"></script>
       - text: <script src="src/qrcode.js"></script>
     gongtimer:
-      allottedTime: 25
+      allottedTime: 20
       barColor: "#00f"
       progressBarHeight: 4
     filters:
     - motion-canvas
+    - reveal-auto-agenda
+    auto-agenda:
+      heading: Agenda
 
 project:
   preview:
@@ -42,23 +45,21 @@ revealjs-plugins:
 ---
 
 
-# Agenda
+
+
+# Introduction
 
 {{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
-- What is product management?
-
-- Why should you care as a data scientist?
-
-- Resources
 
 
 
 <!-- ------------------------------------------------------------------ -->
 
-# My product management journey
+## My product management journey {.hlower2}
 
-{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
+{{< motion-canvas ./animations/hexagons.js fullscreen background loop=false >}}
+
 
 ## Products that I worked on
 
@@ -123,7 +124,7 @@ Geoffrey Moore, Crossing the Chasm
 
 <!-- ------------------------------------------------------------------ -->
 
-# But how do you do that?
+## But how do you do that? {.hlower1}
 
 ![](images/question-mark.drawio.png)
 
@@ -136,18 +137,19 @@ Create gain and reduce pain.
 ![](images/jtbd-value-proposition.drawio.png)
 
 
-</br>
+\
 
 Strategyzer, Value Proposition Design
 
 ## Jobs to be done
 
-> Jobs Theory goes beyond superficial categories to expose the functional, social, and emotional dimensions that explain why customers make the choices they do.
->
-> - <https://www.christenseninstitute.org/jobs-to-be-done/>
+> "Jobs Theory goes beyond superficial categories to expose the functional, social, and emotional dimensions that explain why customers make the choices they do."
 
 
-</br>
+
+<https://www.christenseninstitute.org/jobs-to-be-done/>{.right}
+
+\
 
 A framework by Clayton Christensen and Bob Moesta
 
@@ -310,23 +312,33 @@ Make sure they can get help and updates
 
 ## Book recommendations
 
-::: row3
-![Marty cagan](images/book-cagan-inspired.png)
+<!-- Note that line breaks are important to force the columns -->
+::: row5
+![Marty Cagan](images/book-cagan-inspired.png)
+
 ![Teresa Torres](images/book-torres-continuous-discovery.png)
+
 ![Strategyzer](images/book-strategyzer-value-proposition-design.png)
+
 ![April Dunford](images/book-dunford-sales-pitch.png)
+
 ![LeMay](images/book-lemay-pm-in-practise.png)
+
 :::
 
+::: smaller
 - Marty cagan, Inspired
 - Teresa Torres, Continuous discovery habits
 - April Dunford, Sales pitch
+- Strategyzer, Value proposition design
+- LeMay, Product Management in practice
+:::
 
 
 
 ## Lenny's Podcast
 
-![](images/resource-lennys-podcast.png)
+![](images/resource-lennys-podcast-2.png)
 
 ::: {.r-stack}
 <https://www.lennyspodcast.com/>
@@ -342,7 +354,7 @@ Make sure they can get help and updates
 :::
 
 
-# Summary
+## Summary
 
 {{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
@@ -353,14 +365,14 @@ Make sure they can get help and updates
 - Resources
 
 
-# Q&A
+## Q&A
 
 {{< motion-canvas ./animations/posit_footer.js fullscreen=true >}}
 
 </br>
 
 
-{{< qrcode https://andrie.quarto.pub/pmds-saturdays/ height=300 width=300 typeNumber=2 QRCode.correctLevel=H >}}
+{{< qrcode https://andrie.quarto.pub/pmds-earl/ height=300 width=300 typeNumber=2 QRCode.correctLevel=H >}}
 ::: {.r-stack}
-<https://andrie.quarto.pub/pmds-saturdays/>
+<https://andrie.quarto.pub/pmds-earl/>
 :::
