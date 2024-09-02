@@ -1,16 +1,51 @@
 /*-- scss:defaults --*/
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Posit colors
+
+$posit-LIGHT-BLUE-1: #D1DBE5;
+$posit-LIGHT-BLUE-2: #A2B8CB;
+$posit-LIGHT-BLUE-3: #7494B1;
+$posit-Posit-Blue:   #447099;
+$posit-Dark-Blue-1:  #305775;
+$posit-Dark-Blue-2:  #213D4F;
+$posit-Dark-Blue-3:  #17212B;
+$posit-Light-Gray-3: #707073;
+$posit-Posit-Gray:   #404041;
+$posit-Dark-Gray-1:  #333333;
+$posit-Dark-Gray-2:  #242426;
+$posit-Dark-Gray-3:  #151515;
+
+// fonts
+$font-family-sans-serif: 'Open Sans', sans-serif !default;
+$font-family-monospace: 'Source Code Pro', monospace !default;
+
+// headings
+$presentation-heading-font: "Open Sans", sans-serif !default;
 $presentation-h1-font-size:	2em;
-$presentation-h2-font-size:	1.5em;
+$presentation-h2-font-size:	1.6em;
 $presentation-h3-font-size:	1.3em;
 $presentation-h4-font-size:	1em;
 
 $presentation-heading-color: #A2B8CB;
 
 $presentation-font-size-root: 50px;
-$body-color: #222;
+$body-color: #ccc;
 
 /*-- scss:rules --*/
+
+.reveal h1 {
+  margin: 0 0 1em 0;
+}
+
+.reveal h2 {
+  // font-weight: 200 !important;
+  margin: 0 0 1em 0;
+  // color: $dark-basic !important;
+}
+
 
 @font-face {
   font-family: "Open_Sans";
@@ -125,13 +160,6 @@ $rows: (
 
 /*-- scss:defaults --*/
   
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-// fonts
-$font-family-sans-serif: 'Open Sans', sans-serif !default;
-$font-family-monospace: 'Source Code Pro', monospace !default;
 
 // colors
 // $dark-basic: #333333 !default;
@@ -158,23 +186,7 @@ $font-family-monospace: 'Source Code Pro', monospace !default;
 // $link-hover-decoration: null !default;
  
 
-// Posit colors
-
-  $posit-LIGHT-BLUE-1: #D1DBE5;
-  $posit-LIGHT-BLUE-2: #A2B8CB;
-  $posit-LIGHT-BLUE-3: #7494B1;
-  $posit-Posit-Blue:   #447099;
-  $posit-Dark-Blue-1:  #305775;
-  $posit-Dark-Blue-2:  #213D4F;
-  $posit-Dark-Blue-3:  #17212B;
-  $posit-Light-Gray-3: #707073;
-  $posit-Posit-Gray:   #404041;
-  $posit-Dark-Gray-1:  #333333;
-  $posit-Dark-Gray-2:  #242426;
-  $posit-Dark-Gray-3:  #151515;
   
-// headings
-$presentation-heading-font: "Open Sans", sans-serif !default;
 
 /*-- scss:rules --*/
 
@@ -183,10 +195,6 @@ $presentation-heading-font: "Open Sans", sans-serif !default;
 //   color: $dark-basic !important;
 // }
 
-h2 {
-  font-weight: 200 !important;
-  // color: $dark-basic !important;
-}
 
 .title-box {
   // color: $lightest-basic;
