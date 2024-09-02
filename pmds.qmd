@@ -45,16 +45,10 @@ revealjs-plugins:
 ---
 
 
-
-
 # Introduction
 
 {{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
 
-
-
-
-<!-- ------------------------------------------------------------------ -->
 
 ## My product management journey {.hlower2}
 
@@ -85,6 +79,7 @@ revealjs-plugins:
 ::::
 
 ## More recently, at Posit
+
 
 {{< motion-canvas ./animations/posit-logo.js fullscreen background loop=false >}}
 
@@ -193,7 +188,7 @@ Marty Cagan, Inspired
 
 # The data scientist as Product Manager
 
-{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
+{{< motion-canvas ./animations/hexagons.js background fullscreen loop=false >}}
 
 
 
@@ -308,9 +303,10 @@ Make sure they can get help and updates
 
 # Resources
 
-{{< motion-canvas ./animations/hexagons.js fullscreen=true loop=false >}}
+{{< motion-canvas ./animations/hexagons.js background fullscreen loop=false >}}
 
 ## Book recommendations
+
 
 <!-- Note that line breaks are important to force the columns -->
 ::: row5
