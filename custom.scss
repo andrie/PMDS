@@ -8,6 +8,7 @@ $presentation-h4-font-size:	1em;
 $presentation-heading-color: #A2B8CB;
 
 $presentation-font-size-root: 50px;
+$body-color: #222;
 
 /*-- scss:rules --*/
 
@@ -29,6 +30,12 @@ $rows: (
 );
 
 @each $row, $count in $rows {
+  .#{$row} {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    grid-gap: 30px;
+  }
   .#{$row} > p,
   .#{$row} > ul,
   .#{$row} > .col {
@@ -48,52 +55,10 @@ $rows: (
   }
 }
 
-//  old code
-
-// .row1, .row2, .row3, .row5 {
-//   margin-top: 0.5em;
-//   margin-bottom: 0.5em;
-//   display: flex;
-//   grid-gap: 30px;
-// }
-// 
-// .row1 > p, .row > ul, .row > .col,
-// .row2 > p, .row > ul, .row > .col,
-// .row3 > p, .row > ul, .row > .col 
-// .row5 > p, .row > ul, .row > .col {
-//   padding: 0;
-//   margin: 0;
-//   list-style-type: none;
-// 	display: grid;
-// 	width: 100%;
-// 	grid-gap: 1em;
-//   text-align: center;
-//   font-size: 0.75em;
-// }
-
-// .row1 > p, .row > ul, .row > .col {
-//   grid-template-columns: 1fr;
-// }
-
-// .row2 > p, .row > ul, .row > .col {
-//   grid-template-columns: repeat(2, 1fr);
-// }
-
-// .row3 > p, .row > ul, .row > .col {
-//   grid-template-columns: repeat(3, 1fr);
-// }
-
-// .row5 > p, .row > ul, .row > .col {
-//   grid-template-columns: repeat(5, 1fr);
-// }
-
-// .row1 > .col, 
-// .row2 > .col, 
-// .row3 > .col,
-// .row5 > .col {
-//   display: flex;
-// }
-
+// #additional-things-as-you-grow-your-product > ul:nth-child(3) > li:nth-child(1) > ul > li
+.reveal ul > li > ul {
+  color: #aac;
+}
 
 .larger {
   font-size: 1.25em;
@@ -107,11 +72,8 @@ $rows: (
   display: none;
 }
 
-// .reveal .row5 img {
-//   max-height: 100px;
-// }
 
-
+// images
 
 .reveal img {
   margin: 0.5em;
@@ -155,6 +117,9 @@ $rows: (
   left: 0;
 }
 
+.agenda {
+  font-size: 1.5em;
+}
 
 // jeremy's custom css
 
