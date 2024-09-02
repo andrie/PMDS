@@ -8,4 +8,5 @@ _site
 _fonts
 _raw_images/
 images-not-used/
-
+pmds.html
+todo.qmd
