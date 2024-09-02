@@ -15,56 +15,101 @@ $presentation-font-size-root: 50px;
   font-family: "Open_Sans";
   src: 
     local(),  
-    url("./_fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format(truetype);
+    url("./_fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") 
+    format(truetype);
   }
 
-.row1, .row2, .row3 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  display: flex;
-  grid-gap: 30px;
+// multiple images per row
+
+$rows: (
+  row1: 1,
+  row2: 2,
+  row3: 3,
+  row5: 5
+);
+
+@each $row, $count in $rows {
+  .#{$row} > p,
+  .#{$row} > ul,
+  .#{$row} > .col {
+    grid-template-columns: repeat(#{$count}, 1fr);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    text-align: center;
+    font-size: 0.75em;
+  }
+
+  .#{$row} > .col {
+    display: flex;
+  }
 }
 
-.row1 > p, .row > ul, .row > .col,
-.row2 > p, .row > ul, .row > .col,
-.row3 > p, .row > ul, .row > .col{
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-	display: grid;
-	width: 100%;
-	grid-gap: 1em;
-  text-align: center;
-  font-size: 0.75em;
-}
+//  old code
 
-.row1 > p, .row > ul, .row > .col {
-  grid-template-columns: 1fr;
-}
+// .row1, .row2, .row3, .row5 {
+//   margin-top: 0.5em;
+//   margin-bottom: 0.5em;
+//   display: flex;
+//   grid-gap: 30px;
+// }
+// 
+// .row1 > p, .row > ul, .row > .col,
+// .row2 > p, .row > ul, .row > .col,
+// .row3 > p, .row > ul, .row > .col 
+// .row5 > p, .row > ul, .row > .col {
+//   padding: 0;
+//   margin: 0;
+//   list-style-type: none;
+// 	display: grid;
+// 	width: 100%;
+// 	grid-gap: 1em;
+//   text-align: center;
+//   font-size: 0.75em;
+// }
 
-.row2 > p, .row > ul, .row > .col {
-  grid-template-columns: repeat(2, 1fr);
-}
+// .row1 > p, .row > ul, .row > .col {
+//   grid-template-columns: 1fr;
+// }
 
-.row3 > p, .row > ul, .row > .col {
-  grid-template-columns: repeat(3, 1fr);
-}
+// .row2 > p, .row > ul, .row > .col {
+//   grid-template-columns: repeat(2, 1fr);
+// }
 
-.row1 > .col, 
-.row2 > .col, 
-.row3 > .col {
-  display: flex;
-}
+// .row3 > p, .row > ul, .row > .col {
+//   grid-template-columns: repeat(3, 1fr);
+// }
+
+// .row5 > p, .row > ul, .row > .col {
+//   grid-template-columns: repeat(5, 1fr);
+// }
+
+// .row1 > .col, 
+// .row2 > .col, 
+// .row3 > .col,
+// .row5 > .col {
+//   display: flex;
+// }
 
 
 .larger {
   font-size: 1.25em;
 }
 
+.reveal .smaller > ul > li {
+  font-size: 0.75em;
+}
+
 .hide-title > h2 {
   display: none;
 }
 
+// .reveal .row5 img {
+//   max-height: 100px;
+// }
 
 
 
@@ -222,4 +267,38 @@ section.has-dark-background > h2 {
 
 .sourceCode.r {
   height: 910px;
+}
+
+@mixin hlower-styles($top) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  max-width: 80%;
+  text-align: center;
+  transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+}
+
+.reveal .hlower1 {
+  > h1, > h2 { @include hlower-styles(100px); }
+}
+.reveal .hlower2 {
+  > h1, > h2 { @include hlower-styles(300px); }
+}
+
+.reveal .right {
+  text-align: right;
+  width: 100%;
+  margin-right: 2em;
+  display: block;
+  &::before {
+    content: "- "; // Replace with your desired prefix text
+    display: inline-block;
+    margin-right: 0.5em; // Adjust spacing as needed
+  }
+}
+
+.reveal blockquote {
+  margin: 1em;
+  font-style: italic;
 }
