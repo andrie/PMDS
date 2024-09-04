@@ -101,20 +101,9 @@ revealjs-plugins:
 
 ## Product life cycle
 
+\
+
 ![](./images/product-life-cycle.drawio.png){width="80%"}
-
-## The adoption cycle
-
-<br>
-
-![](images/life-cycle-curve.drawio.png)
-
-
-</br>
-
-Geoffrey Moore, Crossing the Chasm
-
-
 
 
 <!-- ------------------------------------------------------------------ -->
@@ -125,11 +114,27 @@ Geoffrey Moore, Crossing the Chasm
 
 
 
-## Define your value proposition
+## Understand the customer's jobs to be done
 
-Create gain and reduce pain.
+![](images/jtbd-value-proposition-1.drawio.png)
 
-![](images/jtbd-value-proposition.drawio.png)
+
+\
+
+Strategyzer, Value Proposition Design
+
+## Design your own capability set
+
+![](images/jtbd-value-proposition-2.drawio.png)
+
+
+\
+
+Strategyzer, Value Proposition Design
+
+## Match your capabilities to the customer's jobs-to-be-done
+
+![](images/jtbd-value-proposition-3.drawio.png)
 
 
 \
@@ -140,13 +145,12 @@ Strategyzer, Value Proposition Design
 
 > "Jobs Theory goes beyond superficial categories to expose the functional, social, and emotional dimensions that explain why customers make the choices they do."
 
-
-
 <https://www.christenseninstitute.org/jobs-to-be-done/>{.right}
 
-\
 
+::: aside
 A framework by Clayton Christensen and Bob Moesta
+:::
 
 ## Jobs to be done
 
@@ -165,7 +169,7 @@ Use JTBD as the first step in the value proposition:
 Define a sequence of outcomes (the plan) based on analysis of:
 
 - target customer,
-- market environment and
+- market environment, and
 - strategic objectives and needs of \<your company\>
 
 ![](images/product-strategy-1.drawio.png)
@@ -174,13 +178,15 @@ Define a sequence of outcomes (the plan) based on analysis of:
 
 ![](images/product-strategy.drawio.png)
 
-## The product triad
+
+
+<!-- ## The product triad
 
 ![](images/pm-triad.drawio.png)
 
 </br>
 
-Marty Cagan, Inspired
+Marty Cagan, Inspired -->
 
 
 <!-- --------------------------------------------------------------------- -->

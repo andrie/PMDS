@@ -36,15 +36,10 @@ $body-color: #ccc;
 
 /*-- scss:rules --*/
 
-.reveal h1 {
+.reveal {
+  h1, h2 {
   margin: 0 0 1em 0;
-}
-
-.reveal h2 {
-  // font-weight: 200 !important;
-  margin: 0 0 1em 0;
-  // color: $dark-basic !important;
-}
+}}
 
 
 @font-face {
@@ -55,7 +50,9 @@ $body-color: #ccc;
     format(truetype);
   }
 
-// multiple images per row
+// Multiple images per row
+// This creates .row1,.row2, etc. 
+// Classes that can be used to control the number of images per row.
 
 $rows: (
   row1: 1,
@@ -90,7 +87,6 @@ $rows: (
   }
 }
 
-// #additional-things-as-you-grow-your-product > ul:nth-child(3) > li:nth-child(1) > ul > li
 .reveal ul > li > ul {
   color: #aac;
 }
@@ -158,7 +154,6 @@ $rows: (
 
 // jeremy's custom css
 
-/*-- scss:defaults --*/
   
 
 // colors
@@ -188,7 +183,6 @@ $rows: (
 
   
 
-/*-- scss:rules --*/
 
 // body {
 //   font-weight: 400 !important;
